@@ -1,0 +1,28 @@
+{% extends 'myBakery/base.html' %}
+{% block title %}{{ product.product_name }}-View{% endblock title %}
+{% block body %}
+    <div class="container mt-5">
+        <div class="row">
+
+        <div class="row">
+                <img src="/media/{{ product.image }}" width="500px" height="385px">
+        </div>
+
+        <div class="col mt-4 mx-4">
+        <div class="col mx-1">
+            <b class="text-muted">Name : </b><p class="text-info"  id="namepr{{i.id}}">{{ product.product_name }}</p>
+            <b class="text-muted">Details: </b> <p class="text-info"> {{ product.desc }}</p>
+            <b class="text-muted">Shop:    </b> <p class="text-info">{{ product.shop_name }}</p>
+            <b class="text-muted">Address: </b> <p class="text-info">{{ product.shop_address }}</p>
+            <b class="text-muted">Price  : </b> <p class="text-info">{{ product.price }}</p>
+
+        </div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+{% endblock body %}
+
